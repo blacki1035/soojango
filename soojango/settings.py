@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
 from pathlib import Path
-
 import environ
 import os
 
@@ -48,7 +47,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['http://']
+# CSRF_TRUSTED_ORIGINS = ['http://']
 # Application definition
 
 INSTALLED_APPS = [
