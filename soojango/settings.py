@@ -46,7 +46,7 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://port-0-soojango-dcse2bli8qsogb.sel4.cloudtype.app']
 
 CSRF_TRUSTED_ORIGINS = ['https://port-0-soojango-dcse2bli8qsogb.sel4.cloudtype.app']
 # Application definition
