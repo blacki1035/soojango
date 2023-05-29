@@ -48,7 +48,7 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = ['*']
 
-
+CSRF_TRUSTED_ORIGINS = ['https://port-0-soojango-dcse2bli8qsogb.sel4.cloudtype.app']
 # Application definition
 
 INSTALLED_APPS = [
@@ -146,4 +146,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-CSRF_TRUSTED_ORIGINS = ['*']
+
