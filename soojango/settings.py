@@ -17,14 +17,14 @@ import os
 
 env = environ.Env(
     # set casting, default value
-    DEBUG=(bool, False)
+    DEBUG=(bool, False),
 )
 
 # Set the project base directory
 # BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE_DIR = Path(__file__).resolve().parent.parent
 # Take environment variables from .env file
-# environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
+environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
 # False if not in os.environ because of casting above
 DEBUG = env('DEBUG')
@@ -46,9 +46,9 @@ SECRET_KEY = env('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = True
 
-ALLOWED_HOSTS = ['https://port-0-soojango-dcse2bli8qsogb.sel4.cloudtype.app']
+ALLOWED_HOSTS = ['*']
 
-CSRF_TRUSTED_ORIGINS = ['https://port-0-soojango-dcse2bli8qsogb.sel4.cloudtype.app']
+CSRF_TRUSTED_ORIGINS = ['http://']
 # Application definition
 
 INSTALLED_APPS = [
